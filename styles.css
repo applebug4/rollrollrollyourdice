@@ -1,0 +1,50 @@
+html, body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* background: #aab9cf; */
+    /*background: linear-gradient(#aab9cf, #bdd4e7);*/
+    background: #bdd4e7;
+    color: #637074;
+    padding-left: 5px;
+    font-size: 32px;
+}
+
+input[type="submit"] {
+    color: #637074;
+    padding: 7px;
+    font-size: 20px;
+  }
+
+  #userInput {
+    border: 1px solid#212227; 
+    padding: 7px;
+    font-size: 20px;
+  }
+
+
+table, th, td {
+    border:1px solid #212227;
+   /* background: linear-gradient(red, orange, yellow, green, blue, purple); */
+    border-collapse: collapse;
+    padding: 5px;
+    background: #8693AB;
+    color: #212227;
+    margin-top: 10px;
+  }
+
+button {
+    color: #637074;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+form {
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.hide-column {
+    display: none;
+  }

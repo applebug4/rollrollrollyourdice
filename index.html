@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1> Roll Roll Roll Your Dice </h1>
+    
+  <form id="form" onsubmit="return false;">
+    <label for="userInput">How many times do you want to roll the dice?</label><br>
+    <input type="text" id="userInput" />
+    <input type="submit" onclick="rollDie((document.getElementById('userInput').value));" />
+</form>
+<button onclick="changeNumDice(1);"> Add number of dice </button>
+<button onclick="changeNumDice(-1);"> Subtract number of dice </button>
+<table>
+  <th id="numDice"> Number of dice being rolled: </th>
+  <tr>
+      <td id="totalRolls">Total rolls: 0</td>
+      <td id="dice1">1</td>
+      <td id="dice2">2</td>
+      <td id="dice3">3</td>
+      <td id="dice4">4</td>
+      <td id="dice5">5</td>
+      <td id="dice6">6</td>
+      <td id="dice7" style="display: none;">7</td>
+      <td id="dice8" style="display: none;">8</td>
+      <td id="dice9" style="display: none;">9</td>
+      <td id="dice10" style="display: none;">10</td>
+      <td id="dice11" style="display: none;">11</td>
+      <td id="dice12" style="display: none;">12</td>
+      <td id="dice13" style="display: none;">13</td>
+      <td id="dice14" style="display: none;">14</td>
+      <td id="dice15" style="display: none;">15</td>
+      <td id="dice16" style="display: none;">16</td>
+      <td id="dice17" style="display: none;">17</td>
+      <td id="dice18" style="display: none;">18</td>
+  </tr>
+  <tr>
+      <td id="numDoubles">Number of doubles: 0</td>
+      <td id="frequency1">0</td>
+      <td id="frequency2">0</td>
+      <td id="frequency3">0</td>
+      <td id="frequency4">0</td>
+      <td id="frequency5">0</td>
+      <td id="frequency6">0</td>
+      <td id="frequency7" class="hide-column">0</td>
+      <td id="frequency8" class="hide-column">0</td>
+      <td id="frequency9" class="hide-column">0</td>
+      <td id="frequency10" class="hide-column">0</td>
+      <td id="frequency11" class="hide-column">0</td>
+      <td id="frequency12" class="hide-column">0</td>
+      <td id="frequency13" class="hide-column">0</td>
+      <td id="frequency14" class="hide-column">0</td>
+      <td id="frequency15" class="hide-column">0</td>
+      <td id="frequency16" class="hide-column">0</td>
+      <td id="frequency17" class="hide-column">0</td>
+      <td id="frequency18" class="hide-column">0</td>
+  </tr>
+  <tr>
+      <td id="numTriples">Number of triples: 0</td>
+  </tr>
+  <tr>
+      <td id="mean">Mean: 0</td>
+  </tr>
+  <tr>
+      <td id="median">Median: 0</td>
+  </tr>
+  <tr>
+      <td id="mode">Mode: 0</td>
+  </tr>
+</table>
+
+
+      
+<script src="script.js"></script>
+</body>
+</html>
